@@ -260,7 +260,7 @@ class Tribute {
             }
             let ext = licenceFile.pathExtension
             let fileName = licenceFile.deletingPathExtension().lastPathComponent.lowercased()
-            guard ["license", "licence"].contains(fileName),
+            guard ["license", "licence", "copying"].contains(fileName),
                   ["", "text", "txt", "md"].contains(ext)
             else {
                 continue
